@@ -29,3 +29,6 @@ user_id = db.Column(db.Integer, db.foreignKey('user.id'))
 
 
 
+#### 第七章：错误处理
+
+但凡用到视图函数的地方，都需要`forom app import app`。错误处理函数应该也算一种特殊的视图函数吧。
