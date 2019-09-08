@@ -192,6 +192,38 @@
             
         </li>
     
+        <li class="chapter " data-level="1.5" data-path="../关于github/">
+            
+                <a href="../关于github/">
+            
+                    
+                    关于github
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../关于github/关于github的零碎小记.html">
+            
+                <a href="../关于github/关于github的零碎小记.html">
+            
+                    
+                    关于github的零碎小记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
 
@@ -238,6 +270,22 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x5173;&#x4E8E;flask&#x7684;&#x96F6;&#x788E;&#x5C0F;&#x8BB0;">&#x5173;&#x4E8E;Flask&#x7684;&#x96F6;&#x788E;&#x5C0F;&#x8BB0;</h1>
+<h4 id="&#x7B2C;&#x4E94;&#x7AE0;&#xFF1A;&#x7528;&#x6237;&#x767B;&#x5F55;">&#x7B2C;&#x4E94;&#x7AE0;&#xFF1A;&#x7528;&#x6237;&#x767B;&#x5F55;</h4>
+<hr>
+<p><code>current_user</code>&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5462;&#xFF1F;</p>
+<p>&#x7B54;&#xFF1A;&#x5F53;&#x4F60;&#x4ECE;<code>flask_login</code>&#x5BFC;&#x5165;<code>current_user</code>&#x4E4B;&#x540E;&#x4ED6;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E86;&#x3002;</p>
+<hr>
+<h4 id="&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;&#x4E2A;&#x4EBA;&#x4E3B;&#x9875;&#x4E0E;&#x5934;&#x50CF;">&#x7B2C;&#x516D;&#x7AE0;&#xFF1A;&#x4E2A;&#x4EBA;&#x4E3B;&#x9875;&#x4E0E;&#x5934;&#x50CF;</h4>
+<p><code>@app.befor_request</code>&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5728;&#x6240;&#x6709;&#x89C6;&#x56FE;&#x51FD;&#x6570;&#x88AB;&#x8C03;&#x7528;&#x4E4B;&#x524D;&#x8FD0;&#x884C;&#x7684;&#x4E00;&#x4E2A;&#x5C0F;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x6267;&#x884C;&#x67D0;&#x79CD;&#x7279;&#x5B9A;&#x4E2A;&#x5F88;&#x5C0F;&#x7684;&#x529F;&#x80FD;&#x3002;&#x6BD4;&#x5982;&#x66F4;&#x65B0;&#x7528;&#x6237;&#x7684;&#x6700;&#x540E;&#x4E0A;&#x7EBF;&#x65F6;&#x95F4;&#x3002;</p>
+<blockquote>
+<p>&#x8003;&#x8651;&#x5728;&#x5F15;&#x7528;<code>current_user</code>&#x65F6;&#xFF0C;flask-login&#x5C06;&#x8C03;&#x7528;&#x7528;&#x6237;&#x52A0;&#x8F7D;&#x51FD;&#x6570;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x4F1A;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x67E5;&#x8BE2;&#x5E76;&#x5C06;&#x76EE;&#x6807;&#x7528;&#x6237;&#x6DFB;&#x52A0;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4F1A;&#x8BDD;&#x4E2D;&#x3002;</p>
+</blockquote>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;<code>db.session.add(user)</code>&#x5728;&#x4F7F;&#x7528;<code>current_user</code>&#x7684;&#x65F6;&#x5019;&#x5DF2;&#x7ECF;&#x88AB;&#x6267;&#x884C;&#x4E86;&#x3002;</p>
+<h4 id="&#x7B2C;&#x4E03;&#x7AE0;&#xFF1A;-&#x9519;&#x8BEF;&#x5904;&#x7406;">&#x7B2C;&#x4E03;&#x7AE0;&#xFF1A; &#x9519;&#x8BEF;&#x5904;&#x7406;</h4>
+<p>&#x8C03;&#x8BD5;&#x6A21;&#x5F0F;&#x53EF;&#x4EE5;&#x542F;&#x7528;&#x91CD;&#x8F7D;&#x5668;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x5C31;&#x4E0D;&#x5FC5;&#x6BCF;&#x6B21;&#x5BF9;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x66F4;&#x6539;&#x540E;&#x91CD;&#x542F;&#x5E94;&#x7528;&#x4E86;&#x3002;&#x4F46;&#x5BF9;&#x6211;&#x6765;&#x8BF4;&#x7528;&#x5904;&#x4F3C;&#x4E4E;&#x4E0D;&#x5927;&#x3002;</p>
+<p>&#x89C6;&#x56FE;&#x51FD;&#x6570;&#x5E94;&#x8BE5;&#x81F3;&#x5C11;&#x62E5;&#x6709;&#x4E24;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x662F;&#x6E32;&#x67D3;&#x51FA;&#x7684;html&#x754C;&#x9762;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x662F;&#x72B6;&#x6001;&#x7801;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x72B6;&#x6001;&#x7801;&#x4E3A;200(&#x6210;&#x529F;&#x54CD;&#x5E94;)&#x3002;</p>
+<p>&#x56DE;&#x8BDD;&#x56DE;&#x6EDA;&#x5177;&#x4F53;&#x662F;&#x4E2A;&#x4EC0;&#x4E48;&#x4E1C;&#x897F;&#x6211;&#x4E0D;&#x6E05;&#x695A;&#xFF0C;&#x4F46;&#x5B83;&#x7684;&#x529F;&#x80FD;&#x5927;&#x6982;&#x662F;&#x8BA9;&#x6570;&#x636E;&#x5E93;&#x56DE;&#x5230;&#x4E0A;&#x4E00;&#x4E2A;&quot;&#x5065;&#x5EB7;&quot;&#x7684;&#x72B6;&#x6001;&#x5427;&#x3002;</p>
+<p>500&#x9519;&#x8BEF;&#x5E94;&#x8BE5;&#x4E0D;&#x4EC5;&#x4EC5;&#x4F1A;&#x7531;&#x6570;&#x636E;&#x5E93;&#x9519;&#x8BEF;&#x5F15;&#x8D77;&#xFF0C;&#x8FD9;&#x4E2A;&#x56DE;&#x8BDD;&#x56DE;&#x6EDA;&#x5E94;&#x8BE5;&#x4E0D;&#x4F1A;&#x8BEF;&#x4F24;&quot;&#x5065;&#x5EB7;&quot;&#x72B6;&#x6001;&#x4E0B;&#x7684;&#x6570;&#x636E;&#x5E93;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E1C;&#x897F;&#x5E94;&#x8BE5;&#x53EA;&#x662F;&#x628A;&#x6570;&#x636E;&#x5E93;&#x56DE;&#x5230;&#x4E0A;&#x4E00;&#x6B21;<code>db.session.commit()</code>&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x628A;&#x4ECE;&#x4E0A;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x4E4B;&#x540E;&#x6240;&#x6709;&#x7684;&#x7C7B;&#x4F3C;<code>db.session.add()</code>&#x6216;&#x662F;&#x5176;&#x4ED6;&#x7684;&#x4EC0;&#x4E48;&#x64CD;&#x4F5C;&#x5220;&#x9664;&#x5427;&#x3002;&#x5982;&#x679C;&#x4E0A;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x4E4B;&#x540E;&#x4EC0;&#x4E48;&#x90FD;&#x6CA1;&#x6709;&#x505A;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5E94;&#x8BE5;&#x4E5F;&#x662F;&#x4EC0;&#x4E48;&#x90FD;&#x4E0D;&#x4F1A;&#x505A;&#x7684;&#x3002;</p>
 
                                 
                                 </section>
@@ -281,7 +329,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"关于Flask的零碎小记","level":"1.4.1","depth":2,"next":{"title":"关于Flask的框架","level":"1.4.2","depth":2,"path":"关于python/关于Flask的框架.md","ref":"关于python/关于Flask的框架.md","articles":[]},"previous":{"title":"关于python","level":"1.4","depth":1,"path":"关于python/README.md","ref":"关于python/README.md","articles":[{"title":"关于Flask的零碎小记","level":"1.4.1","depth":2,"path":"关于python/关于Flask的零碎小记.md","ref":"关于python/关于Flask的零碎小记.md","articles":[]},{"title":"关于Flask的框架","level":"1.4.2","depth":2,"path":"关于python/关于Flask的框架.md","ref":"关于python/关于Flask的框架.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"关于python/关于Flask的零碎小记.md","mtime":"2019-09-07T01:29:40.205Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-07T03:24:23.252Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"关于Flask的零碎小记","level":"1.4.1","depth":2,"next":{"title":"关于Flask的框架","level":"1.4.2","depth":2,"path":"关于python/关于Flask的框架.md","ref":"关于python/关于Flask的框架.md","articles":[]},"previous":{"title":"关于python","level":"1.4","depth":1,"path":"关于python/README.md","ref":"关于python/README.md","articles":[{"title":"关于Flask的零碎小记","level":"1.4.1","depth":2,"path":"关于python/关于Flask的零碎小记.md","ref":"关于python/关于Flask的零碎小记.md","articles":[]},{"title":"关于Flask的框架","level":"1.4.2","depth":2,"path":"关于python/关于Flask的框架.md","ref":"关于python/关于Flask的框架.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"关于python/关于Flask的零碎小记.md","mtime":"2019-09-07T07:38:19.891Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-08T03:00:45.129Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
