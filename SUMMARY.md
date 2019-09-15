@@ -9,4 +9,6 @@
     * [关于Flask的框架](关于python/关于Flask的框架.md)
 * [关于github](关于github/README.md)
     * [关于github的零碎小记](关于github/关于github的零碎小记.md)
+* [读过的书](读过的书/README.md)
+    * [黑客与画家](读过的书/黑客与画家.md)
 
